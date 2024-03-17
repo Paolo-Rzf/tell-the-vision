@@ -14,7 +14,7 @@ const Nav = () => {
       <div className="md:flex items-center justify-between bg-black md:px-10 px-7">
         <div className="cursor-pointer flex items-center my-[-12px]">
           <span>
-            <img src="/src/assets/icons/logo_tellTheVision.svg" alt="Tell The Vision Logo" className="h-36 w-36" />
+            <img src="icons/logo_tellTheVision.svg" alt="Tell The Vision Logo" className="h-36 w-36" />
           </span>
         </div>
         <div onClick={() => setOpen(!open)} className="text-4xl absolute right-8 top-6 cursor-pointer md:hidden mt-5">
@@ -32,8 +32,8 @@ const Nav = () => {
 
         </ul>
         <div className="hidden md:block">
-          <img src="/src/assets/icons/ico-eng.svg" className="h-12 w-8 cursor-pointer hover:opacity-60 duration-500" alt="EN" />
-          <img src="/src/assets/icons/ico-fr.svg" className="h-12 w-8 cursor-pointer hover:opacity-60 duration-500" alt="FR" />
+          <img src="icons/ico-eng.svg" className="h-12 w-8 cursor-pointer hover:opacity-60 duration-500" alt="EN" />
+          <img src="icons/ico-fr.svg" className="h-12 w-8 cursor-pointer hover:opacity-60 duration-500" alt="FR" />
         </div>
       </div>
     </div>
