@@ -25,7 +25,7 @@ const Nav = () => {
           {
             links.map((link) => (
               <li key={link.name} className="text-2xl md:my-0 my-7">
-                <a href={link.link} className="hover:text-gray-400 duration-500">{link.name.toUpperCase()}</a>
+                <span className="hover:text-gray-400 duration-500 cursor-pointer">{link.name.toUpperCase()}</span>
               </li>
             ))
           }
