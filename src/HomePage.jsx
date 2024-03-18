@@ -33,7 +33,7 @@ const HomePage = () => {
   }, []); // Empty dependency array to run the effect only once on mount
 
   return (
-    <div className="bg-cover bg-center h-screen w-screen relative" ref={bgImageRef} style={{ backgroundImage: `url('images/bg-home.png')` }}>
+    <div className="bg-cover bg-center h-screen w-screen relative" ref={bgImageRef} style={{ backgroundImage: `url('images/bg-home-web.jpg')` }}>
       <div className='flex justify-center h-full items-center wrapper flex-col'>
         <h1 className='text-4xl text-white z-50'>"{t("on_vision")}"</h1>
         <div className='text-2xl text-white z-50 w-full flex justify-around mt-20'>
