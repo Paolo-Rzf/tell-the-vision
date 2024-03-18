@@ -10,3 +10,7 @@
   height: 100%;
   background: rgba(0,0,0,0.6);
 }
+
+.textShadow {
+  text-shadow: 0 0 10px #fff;
+}

@@ -23,7 +23,7 @@ const Nav = () => {
           <ion-icon name={open ? "close" : "menu"}></ion-icon>
         </div>
         <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-black md:z-auto z-[-1] left-0 w-full justify-around md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? "top-[113px] opacity-100" : "top-[-490px] md:opacity-100 opacity-0"}
-        font-sans-helvetica font-bold text-white transform scale-y-125 text-center text-lg tracking-widest pb-4 mr-10`}>
+        font-sans-helvetica font-bold text-white transform scale-y-125 text-center text-lg tracking-widest pb-4 mr-10 textShadow`}>
           {
             links.map((link) => (
               <li key={link.name} className="text-2xl md:my-0 my-7">
