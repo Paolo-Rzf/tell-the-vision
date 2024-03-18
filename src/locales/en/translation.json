@@ -3,5 +3,8 @@
   "clients": "clients",
   "achievements": "achievements",
   "partners": "partners",
-  "contact": "contact"
+  "contact": "contact",
+  "strategy_identity": "Strategy and identity",
+  "comm_support": "Communication support",
+  "digit_comm":"Digital communication"
 }
