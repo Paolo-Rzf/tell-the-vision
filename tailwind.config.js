@@ -7,9 +7,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'sans-helvetica': ['Helvetica', 'Arial', 'sans-serif'],
+        Regular: ["bebasneuepro"],
       },
-    },    
+    },
   },
   plugins: [],
 }
