@@ -1,39 +1,21 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import gsap from 'gsap'; // Assuming GSAP is installed
+import "./components/CercleAnimation.css"; // Fichier CSS pour notre animation
 
 const HomePage = () => {
   const { t } = useTranslation();
-  const bgImageRef = useRef(null); // Create a ref for the background image
+  const [animationComplete, setAnimationComplete] = useState(false);
 
-  useEffect(() => {
-    const bgImage = bgImageRef.current;
-
-    if (bgImage) {
-      // Get the background image width
-      const imageWidth = bgImage.clientWidth;
-
-      // Create a GSAP timeline for the animation
-      const tl = gsap.timeline({ paused: true });
-
-      // Set the initial scale to 0 to prevent overflow
-      tl.set(bgImage, { scale: 0 });
-
-      // Animate the scale and position simultaneously
-      tl.to(bgImage, {
-        scale: 1,
-        x: 0,
-        duration: 2,
-        ease: 'power3.out'
-      });
-
-      // Play the animation on component mount
-      tl.play();
-    }
-  }, []); // Empty dependency array to run the effect only once on mount
+  const handleAnimationEnd = () => {
+    setAnimationComplete(true);
+  };
 
   return (
-    <div className="bg-cover bg-center h-screen w-screen relative" ref={bgImageRef} style={{ backgroundImage: `url('images/bg-home-web.jpg')` }}>
+    <div className="bg-cover bg-center h-screen w-screen relative" style={{ backgroundImage: `url('images/bg-home-web.jpg')` }}>
+      <div className={`circle-container ${animationComplete && "hidden"}`}>
+        <div className="circle z-[52]" onAnimationEnd={handleAnimationEnd}></div>
+        <div className='bg-white h-screen w-screen z-[51] circle-wall'></div>
+      </div>
       <div className='flex justify-center h-full items-center wrapper flex-col'>
         <h1 className='font-Regular tracking-[0.8rem] text-5xl text-white z-50'>"{t("on_vision")}"</h1>
         <div className='font-Regular tracking-[0.5rem] text-3xl text-white z-50 w-full flex justify-around mt-20 textShadow'>
