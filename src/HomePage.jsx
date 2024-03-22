@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import "./components/CercleAnimation.css";
+import "css/CercleAnimation.css";
 
 const HomePage = () => {
   const { t } = useTranslation();
@@ -14,10 +14,10 @@ const HomePage = () => {
 
   return (
     <div className="bg-cover bg-center h-screen w-screen relative" style={{ backgroundImage: `url('images/bg-home-web.jpg')` }}>
-      <div ref={circleContainerRef} className={`circle-container`}>
+      <div ref={circleContainerRef} className="relative w-full h-screen flex justify-center items-center">
         <div className="circle z-[52]" onAnimationEnd={handleAnimationEnd}></div>
         <div className='bg-white h-screen w-screen z-[51] circle-wall'></div>
-        <div className='flex justify-center h-full items-center wrapper flex-col absolute inset-0'>
+        <div className='flex justify-center h-full items-center wrapper flex-col absolute inset-0 text-center'>
           <h1 className='font-Regular tracking-[0.8rem] text-5xl text-white z-50'>"{t("on_vision")}"</h1>
           <div className='font-Regular tracking-[0.5rem] text-3xl text-white z-50 w-full flex justify-around mt-20 textShadow'>
             <span>{t("strategy_identity").toUpperCase()}</span>
