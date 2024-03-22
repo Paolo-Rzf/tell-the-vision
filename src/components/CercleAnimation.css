@@ -52,3 +52,7 @@
     opacity: 0;
   }
 }
+
+* {
+  scrollbar-width: none;
+}
