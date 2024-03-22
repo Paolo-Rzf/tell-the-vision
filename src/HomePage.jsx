@@ -24,7 +24,7 @@ const HomePage = () => {
             <span>{t("comm_support").toUpperCase()}</span>
             <span>{t("digit_comm").toUpperCase()}</span>
           </div>
-          <button className='bg-gray-300 w-48 h-16 border border-y-8 border-x-[20px] border-black absolute bottom-20'>Button</button>
+          <button className='bg-gray-300 w-48 h-16 border border-y-8 border-x-[20px] border-black absolute bottom-20'></button>
         </div>
       </div>
     </div>
