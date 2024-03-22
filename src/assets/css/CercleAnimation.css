@@ -1,9 +1,4 @@
 .circle {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background-color: black;
   animation: circleAnimation 1.5s ease-in-out forwards;
 }
 
@@ -37,9 +32,6 @@
   100% {
     transform: translateY(0) scale(100);
     opacity: 0;
+    display: none;
   }
-}
-
-* {
-  scrollbar-width: none;
 }

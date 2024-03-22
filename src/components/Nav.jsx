@@ -16,7 +16,7 @@ const Nav = () => {
       <div className="md:flex items-center justify-between bg-black md:px-10 px-7">
         <div className="cursor-pointer flex items-center my-[-12px]">
           <span>
-            <img src="icons/logo_tellTheVision.svg" alt="Tell The Vision Logo" className="h-44 w-44 min-h-44 min-w-44" />
+            <img src="icons/logo_tellTheVision.svg" alt="Tell The Vision Logo" className="h-44 w-44 min-h-20 min-w-20" />
           </span>
         </div>
         <div onClick={() => setOpen(!open)} className="text-4xl absolute right-8 top-6 cursor-pointer md:hidden mt-5">

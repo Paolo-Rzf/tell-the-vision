@@ -1,0 +1,49 @@
+* {
+  scrollbar-width: none;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section:not(.one) {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section > span {
+  color: white;
+  text-shadow: 1px 1px 4px #000;
+  font-size: 20px;
+}
+
+.container {
+  height: 100vh;
+  overflow-y: scroll; /* Ajout de la barre de défilement verticale */
+  scroll-snap-type: y mandatory; /* Applique le défilement snap vertical */
+}
+
+.one,
+.two,
+.three,
+.four {
+  height: 100vh; /* Chaque section occupe toute la hauteur de la vue */
+  scroll-snap-align: start; /* Aligne chaque section au début du conteneur lors du défilement */
+}
+
+/* Styles pour les sections (juste pour l'exemple) */
+.one {
+  background-color: #f0f0f0;
+}
+.two {
+  background-color: #e0e0e0;
+}
+.three {
+  background-color: #d0d0d0;
+}
+.four {
+  background-color: #c0c0c0;
+}
