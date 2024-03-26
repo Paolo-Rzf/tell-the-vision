@@ -1,0 +1,45 @@
+.conteneur {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.cercle {
+  width: 7px;
+  height: 7px;
+  background-color: #B2B2B2; /* Couleur de fond */
+  border-radius: 50%; /* Rend le div circulaire */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease;
+}
+
+.conteneur:hover .cercle::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background-color: black;
+  border-color: #B2B2B2;
+  border-width: 1px;
+  border-radius: 50%;
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  animation: agrandir 0.5s ease forwards;
+}
+
+@keyframes agrandir {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
