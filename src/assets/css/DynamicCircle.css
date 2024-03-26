@@ -2,19 +2,18 @@
   position: relative;
   width: fit-content;
   height: fit-content;
-  width: 20px;
-  height: 20px;
   cursor: pointer;
 }
 
 .cercle {
   width: 7px;
   height: 7px;
-  background-color: #B2B2B2; /* Couleur de fond */
-  border-radius: 50%; /* Rend le div circulaire */
+  background-color: #b2b2b2;
+  border-radius: 50%;
   position: absolute;
   top: 50%;
-  left: 50%;
+  /* left: 50%; */
+  right: 0;
   transform: translate(-50%, -50%);
   transition: transform 0.2s ease;
 }
@@ -25,12 +24,9 @@
   width: 7px;
   height: 7px;
   background-color: black;
-  border-color: #B2B2B2;
+  border-color: #b2b2b2;
   border-width: 1px;
   border-radius: 50%;
-  /* top: 50%;
-  left: 50%; */
-  /* transform: translate(-50%, -50%); */
   animation: agrandir 0.5s ease forwards;
 }
 
@@ -42,4 +38,27 @@
     transform: scale(2.5);
     opacity: 0;
   }
+}
+
+.texte {
+  margin-right: 10px; /* Espacement entre le texte et le tiret */
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  position: relative; /* Ajout de la position relative pour le positionnement du pseudo-élément */
+}
+
+.texte::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -40px; /* Ajustez selon votre besoin */
+  width: 35px; /* Longueur du tiret */
+  height: 1px; /* Épaisseur du tiret */
+  background-color: black;
+}
+
+.conteneur:hover .texte {
+  transform: translateX(-100%);
+  opacity: 1;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
