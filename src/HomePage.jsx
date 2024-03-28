@@ -25,15 +25,15 @@ const HomePage = () => {
             className="relative w-full h-screen flex justify-center items-center"
           >
             <div
-              className="circle z-[12] absolute w-40 h-40 rounded-[50%] bg-black"
+              className="circle z-[32] absolute w-40 h-40 rounded-[50%] bg-black"
               onAnimationEnd={handleAnimationEnd}
             ></div>
-            <div className="bg-white h-screen w-screen z-[11] circle-wall"></div>
+            <div className="bg-white h-screen w-screen z-[31] circle-wall"></div>
             <div className="flex justify-center h-full items-center wrapper flex-col absolute inset-0 text-center">
-              <h1 className="font-Regular tracking-[0.8rem] text-5xl text-white z-10">
+              <h1 className="font-Regular tracking-[0.8rem] text-5xl text-white z-30">
                 "{t("on_vision")}"
               </h1>
-              <div className="font-Regular tracking-[0.5rem] text-3xl text-white z-10 w-full flex justify-around mt-20 textShadow">
+              <div className="font-Regular tracking-[0.5rem] text-3xl text-white z-30 w-full flex justify-around mt-20 textShadow">
                 <span>{t("strategy_identity").toUpperCase()}</span>
                 <span>{t("comm_support").toUpperCase()}</span>
                 <span>{t("digit_comm").toUpperCase()}</span>
