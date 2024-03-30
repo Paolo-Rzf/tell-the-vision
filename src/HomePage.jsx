@@ -25,7 +25,7 @@ const HomePage = () => {
             className="relative w-full h-screen flex justify-center items-center"
           >
             <div
-              className="circle z-[32] absolute w-40 h-40 rounded-[50%] bg-black"
+              className="circle z-[32] absolute w-40 h-40 rounded-[50%] bg-[#FF0000]"
               onAnimationEnd={handleAnimationEnd}
             ></div>
             <div className="bg-white h-screen w-screen z-[31] circle-wall"></div>
