@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import HomePage from "./HomePage"
 import Nav from "components/Nav"
 import DynamicCircle from "components/DynamicCircle";
@@ -7,6 +8,10 @@ import Intro from "components/Intro";
 
 function App() {
   const [isStarted, setIsStarted] = useState(false);
+
+  useEffect(() => {
+    window.history.scrollRestoration = 'manual'
+  }, []);
 
   return (
     <>
